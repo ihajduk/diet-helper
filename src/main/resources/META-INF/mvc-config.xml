@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    - DispatcherServlet application context for PetClinic's web tier.
+-->
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <mvc:view-resolvers>
+        <mvc:content-negotiation use-not-acceptable="true">
+            <mvc:default-views>
+                <bean class="org.springframework.web.servlet.view.JstlView">
+                    <property name="url" value=""/>
+                </bean>
+            </mvc:default-views>
+        </mvc:content-negotiation>
+
+        <!-- Registering BeanNameViewResolver and InternalViewResolver -->
+        <mvc:bean-name/>
+        <mvc:jsp prefix="/WEB-INF/jsp/" suffix=".jsp"/>
+    </mvc:view-resolvers>
+
+    <mvc:annotation-driven/>
+
+    <context:component-scan base-package="com.diethelper.controller"/>
+
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
+
+    <mvc:view-controller path="/" view-name="index"/>
+
+    <mvc:default-servlet-handler/>
+
+    <!--
+    - This bean resolves specific types of exceptions to corresponding logical
+    - view names for error views.
+    -->
+
+    <!--<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">-->
+        <!--&lt;!&ndash; view name resolved using bean of type InternalResourceViewResolver (declared in mvc-view-config.xml) &ndash;&gt;-->
+        <!--<property name="defaultErrorView" value="exception"/>-->
+        <!--&lt;!&ndash; results into 'WEB-INF/jsp/exception.jsp' &ndash;&gt;-->
+        <!--<property name="warnLogCategory" value="warn"/>-->
+        <!--&lt;!&ndash; needed otherwise exceptions won't be logged anywhere &ndash;&gt;-->
+    <!--</bean>-->
+
+</beans>
