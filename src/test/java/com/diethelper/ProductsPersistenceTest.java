@@ -66,17 +66,11 @@ public class ProductsPersistenceTest {
         }
     }
 
-    // TODO: not working yet
     @Test
     @Transactional
     public void findAvgMidSumOfNutritientsForAllDiets(){
         List<NutritionStatsDTO> list = productsRepository.findAvgMidSumOfNutritientsForAllDiets();
         list.forEach(System.out::println);
-//        for (Iterator<NutritionStatsDTO> i = list.iterator(); i.hasNext();) {
-//            NutritionStatsDTO item = i.next();
-//            System.out.println("diet: " + item.getIdDiet() + " averages: Protein: " + item.getAvgProtein() +
-//                    "g  Carbo: " + item.getAvgCarbohydrate() + "g Fat "+ item.getAvgFat());
-//        }
     }
 
 

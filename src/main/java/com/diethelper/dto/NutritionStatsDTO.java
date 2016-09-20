@@ -3,56 +3,53 @@ package com.diethelper.dto;
 import javax.persistence.ColumnResult;
 import javax.persistence.ConstructorResult;
 import javax.persistence.SqlResultSetMapping;
+import java.math.BigDecimal;
 
 /**
  * Created by iwha on 9/20/2016.
  */
-@SqlResultSetMapping(
-        name = "NutritionStatsDTOMapping",
-        classes = @ConstructorResult(
-                targetClass = NutritionStatsDTO.class,
-                columns = {
-                        @ColumnResult(name = "id", type = Integer.class),
-                        @ColumnResult(name = "avgProtein", type = Integer.class),
-                        @ColumnResult(name = "avgCarbohydrate", type = Integer.class),
-                        @ColumnResult(name = "avgFat", type = Integer.class)
-                }
-        ))
-public class NutritionStatsDTO {
-    private int idDiet;
-    private int avgProtein;
-    private int avgCarbohydrate;
-    private int avgFat;
 
-    public int getIdDiet() {
-        return idDiet;
-    }
+public class NutritionStatsDTO {
+    private Integer idDiet;
+    private Double avgProtein;
+    private Double avgCarbohydrate;
+    private Double avgFat;
 
     public void setIdDiet(int idDiet) {
         this.idDiet = idDiet;
     }
 
-    public int getAvgProtein() {
-        return avgProtein;
-    }
-
-    public void setAvgProtein(int avgProtein) {
+    public void setAvgProtein(Double avgProtein) {
         this.avgProtein = avgProtein;
     }
 
-    public int getAvgCarbohydrate() {
-        return avgCarbohydrate;
-    }
-
-    public void setAvgCarbohydrate(int avgCarbohydrate) {
+    public void setAvgCarbohydrate(Double avgCarbohydrate) {
         this.avgCarbohydrate = avgCarbohydrate;
     }
 
-    public int getAvgFat() {
+    public void setAvgFat(Double avgFat) {
+        this.avgFat = avgFat;
+    }
+
+    public int getIdDiet() {
+        return idDiet;
+    }
+
+    public Double getAvgProtein() {
+        return avgProtein;
+    }
+
+    public Double getAvgCarbohydrate() {
+        return avgCarbohydrate;
+    }
+
+    public Double getAvgFat() {
         return avgFat;
     }
 
-    public void setAvgFat(int avgFat) {
-        this.avgFat = avgFat;
+    @Override
+    public String toString() {
+        return "diet ID: " + idDiet + ", averages: Protein: " + getAvgProtein().intValue() +
+                    "g  Carbohydrate: " + getAvgCarbohydrate().intValue() + "g Fat: "+ getAvgFat().intValue() +"g";
     }
 }

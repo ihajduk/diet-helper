@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d721741-6998-4359-81b8-34ed11cde1fa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/diethelper/configuration/PopulateDatabaseClass.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/h2/test.h2.db" afterPath="$PROJECT_DIR$/src/main/resources/h2/test.h2.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/diethelper/configuration/InitDietHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/diethelper/configuration/InitDietHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/diethelper/controller/CaloricNeedsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/diethelper/controller/CaloricNeedsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/diethelper/controller/DietController.java" afterPath="$PROJECT_DIR$/src/main/java/com/diethelper/controller/DietController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/diethelper/dto/NutritionStatsDTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/diethelper/dto/NutritionStatsDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/diethelper/model/CaloricNeedsForm.java" afterPath="$PROJECT_DIR$/src/main/java/com/diethelper/model/CaloricNeedsForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/diethelper/repository/DietRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/diethelper/repository/DietRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/diethelper/repository/MealsRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/diethelper/repository/MealsRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/diethelper/repository/ProductsRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/diethelper/repository/ProductsRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/diethelper/service/FoodService.java" afterPath="$PROJECT_DIR$/src/main/java/com/diethelper/service/FoodService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/diethelper/service/FoodServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/diethelper/service/FoodServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/data-access.properties" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/data-access.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/h2/data-fast-track.sql" afterPath="$PROJECT_DIR$/src/main/resources/h2/data-fast-track.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/h2/test.trace.db" afterPath="$PROJECT_DIR$/src/main/resources/h2/test.trace.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/indexform.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/indexform.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/diethelper/ProductsPersistenceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/diethelper/ProductsPersistenceTest.java" />
     </list>
     <ignored path="DietHelper.iws" />
@@ -46,8 +32,8 @@
       <file leaf-file-name="ProductsPersistenceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/diethelper/ProductsPersistenceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+            <state relative-caret-position="606">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -63,29 +49,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NutritionStatsDTO.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NutritionStatsDTO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/diethelper/dto/NutritionStatsDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="-54">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#934#935#0" expanded="true" />
-                <element signature="e#975#976#0" expanded="true" />
-                <element signature="e#1011#1012#0" expanded="true" />
-                <element signature="e#1045#1046#0" expanded="true" />
-                <element signature="e#1078#1079#0" expanded="true" />
-                <element signature="e#1127#1128#0" expanded="true" />
-                <element signature="e#1171#1172#0" expanded="true" />
-                <element signature="e#1210#1211#0" expanded="true" />
-                <element signature="e#1248#1249#0" expanded="true" />
-                <element signature="e#1307#1308#0" expanded="true" />
-                <element signature="e#1361#1362#0" expanded="true" />
-                <element signature="e#1391#1392#0" expanded="true" />
-                <element signature="e#1420#1421#0" expanded="true" />
-                <element signature="e#1461#1462#0" expanded="true" />
-                <element signature="e#1497#1498#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#556#557#0" expanded="true" />
+                <element signature="e#618#619#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#716#717#0" expanded="true" />
+                <element signature="e#752#753#0" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
+                <element signature="e#811#812#0" expanded="true" />
+                <element signature="e#848#849#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+                <element signature="e#923#924#0" expanded="true" />
+                <element signature="e#961#962#0" expanded="true" />
+                <element signature="e#994#995#0" expanded="true" />
+                <element signature="e#1023#1024#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,13 +87,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductsRepository.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProductsRepository.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/diethelper/repository/ProductsRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+            <state relative-caret-position="452">
+              <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1474407341782" expanded="true" signature="2779:2896" ph="SELECT .idDi... " />
+                <marker date="1474407341782" expanded="true" signature="2779:3157" ph="SELECT d.idD... Products" />
               </folding>
             </state>
           </provider>
@@ -136,18 +124,8 @@
       <file leaf-file-name="Products.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/diethelper/model/Products.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/h2/data.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="132">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -179,7 +157,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/diethelper/repository/MealsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/diethelper/service/ProductsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/diethelper/service/FoodService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/diethelper/model/Products.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/diethelper/service/FastTrackPopulate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/diethelper/configuration/FastTrackPopulate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/diethelper/service/FoodServiceImpl.java" />
@@ -198,9 +175,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/diethelper/model/Diets.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/diethelper/repository/DietRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/diethelper/model/CaloricNeedsForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/diethelper/repository/ProductsRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/diethelper/dto/NutritionStatsDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/diethelper/model/Products.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/diethelper/ProductsPersistenceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/diethelper/dto/NutritionStatsDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/diethelper/repository/ProductsRepository.java" />
       </list>
     </option>
   </component>
@@ -227,8 +205,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="2418" />
-    <option name="height" value="1308" />
+    <option name="width" value="1938" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -1273,52 +1251,60 @@
       <workItem from="1473353545720" duration="159000" />
       <workItem from="1473965061496" duration="4453000" />
       <workItem from="1473972630049" duration="3597000" />
-      <workItem from="1474354697293" duration="21385000" />
+      <workItem from="1474354697293" duration="27415000" />
     </task>
+    <task id="LOCAL-00001" summary="2 of 3 queries done repair">
+      <created>1474383832738</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1474383832738</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 15h 47m 58s.xml">
+    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 23h 10m 11s.xml">
       <configuration name="ProductsPersistenceTest.findAvgMidSumOfNutritientsForAllDiets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 15h 49m 22s.xml">
+    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 23h 11m 52s.xml">
       <configuration name="ProductsPersistenceTest.findAvgMidSumOfNutritientsForAllDiets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 16h 37m 43s.xml">
+    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 23h 13m 28s.xml">
       <configuration name="ProductsPersistenceTest.findAvgMidSumOfNutritientsForAllDiets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 16h 38m 22s.xml">
+    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 23h 14m 41s.xml">
       <configuration name="ProductsPersistenceTest.findAvgMidSumOfNutritientsForAllDiets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 16h 38m 49s.xml">
+    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 23h 24m 48s.xml">
       <configuration name="ProductsPersistenceTest.findAvgMidSumOfNutritientsForAllDiets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 16h 42m 12s.xml">
+    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 23h 27m 07s.xml">
       <configuration name="ProductsPersistenceTest.findAvgMidSumOfNutritientsForAllDiets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 16h 45m 43s.xml">
+    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 23h 29m 03s.xml">
       <configuration name="ProductsPersistenceTest.findAvgMidSumOfNutritientsForAllDiets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductsPersistenceTest_findDietsWithDinnersHavingMoreFatThan100 - 2016.09.20 at 15h 07m 21s.xml">
-      <configuration name="ProductsPersistenceTest.findDietsWithDinnersHavingMoreFatThan100" configurationId="JUnit" />
+    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 23h 31m 04s.xml">
+      <configuration name="ProductsPersistenceTest.findAvgMidSumOfNutritientsForAllDiets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductsPersistenceTest_findDietsWithDinnersHavingMoreFatThan100 - 2016.09.20 at 15h 07m 43s.xml">
-      <configuration name="ProductsPersistenceTest.findDietsWithDinnersHavingMoreFatThan100" configurationId="JUnit" />
+    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 23h 32m 23s.xml">
+      <configuration name="ProductsPersistenceTest.findAvgMidSumOfNutritientsForAllDiets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductsPersistenceTest_findDietsWithDinnersHavingMoreFatThan100 - 2016.09.20 at 15h 19m 21s.xml">
-      <configuration name="ProductsPersistenceTest.findDietsWithDinnersHavingMoreFatThan100" configurationId="JUnit" />
+    <history-entry file="ProductsPersistenceTest_findAvgMidSumOfNutritientsForAllDiets - 2016.09.20 at 23h 34m 57s.xml">
+      <configuration name="ProductsPersistenceTest.findAvgMidSumOfNutritientsForAllDiets" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63900000" />
+    <option name="totallyTimeSpent" value="69930000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="2418" height="1308" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42278203" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1326,12 +1312,12 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296328" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.2732707" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="2400" y="29" width="2400" height="1261" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.2732707" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="2400" y="29" width="1700" height="871" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1378,11 +1364,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="2 of 3 queries done repair" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 of 3 queries done repair" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1391,41 +1378,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/diethelper/model/Products.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/mongo-config.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/database-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/diethelper/service/FoodServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
-          <folding>
-            <element signature="e#2942#2943#0" expanded="false" />
-            <element signature="e#2983#2984#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/business-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/diethelper/model/Products.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1656,26 +1608,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/diethelper/model/Products.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/diethelper/model/MealType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/diethelper/model/Diets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1696,6 +1632,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="1248" column="0" selection-start-line="1248" selection-start-column="0" selection-end-line="1248" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/diethelper/model/Diets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.7.Final/hibernate-core-4.3.7.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/h2database/h2/1.4.182/h2-1.4.182.jar!/org/h2/engine/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.1.2.RELEASE/spring-orm-4.1.2.RELEASE.jar!/org/springframework/orm/hibernate3/SessionFactoryUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="109" column="26" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/diethelper/model/Products.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.7.Final/hibernate-core-4.3.7.Final.jar!/org/hibernate/SharedSessionContract.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/diethelper/model/CaloricNeedsForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1704,46 +1696,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/diethelper/repository/ProductsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/diethelper/ProductsPersistenceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+        <state relative-caret-position="606">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/diethelper/dto/NutritionStatsDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="-54">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#975#976#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-            <element signature="e#1210#1211#0" expanded="true" />
-            <element signature="e#1248#1249#0" expanded="true" />
-            <element signature="e#1307#1308#0" expanded="true" />
-            <element signature="e#1361#1362#0" expanded="true" />
-            <element signature="e#1391#1392#0" expanded="true" />
-            <element signature="e#1420#1421#0" expanded="true" />
-            <element signature="e#1461#1462#0" expanded="true" />
-            <element signature="e#1497#1498#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/diethelper/repository/ProductsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1474407341782" expanded="true" signature="2779:2896" ph="SELECT .idDi... " />
+            <marker date="1474407341782" expanded="true" signature="2779:3157" ph="SELECT d.idD... Products" />
           </folding>
         </state>
       </provider>

@@ -4,12 +4,16 @@ import com.diethelper.dto.NutritionStatsDTO;
 import com.diethelper.model.Products;
 import org.hibernate.Hibernate;
 import org.hibernate.SQLQuery;
+import org.hibernate.Session;
+import org.hibernate.transform.Transformers;
 import org.hibernate.type.IntegerType;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.List;
+
+import static org.springframework.orm.hibernate3.SessionFactoryUtils.getSession;
 
 /**
  * Created by iwoha on 6/19/2016.
@@ -63,14 +67,15 @@ public class ProductsRepository {
     }
 
 
-
+        // TODO: sum, median?
     public List<NutritionStatsDTO> findAvgMidSumOfNutritientsForAllDiets() {
-        return (List<NutritionStatsDTO>) entityManager
-                .createQuery("SELECT d.idDiet, AVG(p.protein) as AvgProtein, AVG(p.carbohydrate) as AvgCarbo, AVG(p.fat) as AvgFat " +
+        return (List<NutritionStatsDTO>) entityManager.unwrap(Session.class)
+                .createQuery("SELECT d.idDiet as idDiet, AVG(p.protein) as avgProtein, AVG(p.carbohydrate) as avgCarbohydrate, AVG(p.fat) as avgFat " +
                         "FROM Products p, Meals m, Diets d " +
                         "JOIN d.meals dxm JOIN m.products mxp " +
                         "WHERE dxm.idMeal=m.idMeal AND mxp.idProduct=p.idProduct " +
-                        "GROUP BY d.idDiet ").getResultList();
+                        "GROUP BY d.idDiet")
+                .setResultTransformer(Transformers.aliasToBean(NutritionStatsDTO.class)).list();
     }
 
 
