@@ -27,4 +27,7 @@ public class MealsRepository {
         return ms;
     }
 
+    public void save(Meals meal){
+        entityManager.persist(meal);
+    }
 }

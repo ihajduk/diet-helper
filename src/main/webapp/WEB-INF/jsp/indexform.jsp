@@ -1,3 +1,4 @@
+<%@ page import="com.diethelper.configuration.PopulateDatabaseClass" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
@@ -37,6 +38,11 @@
     <br>
     <input type="submit" class="btn" value="Generate diet" />
 </form:form>
+<h1/>
+<h1/>
+<form action="${pageContext.request.contextPath}/populate" name="populateform" method="post">
+    <input type="submit" class="btn" value="Populate DB"/>
+</form>
 
 </body>
 </html>

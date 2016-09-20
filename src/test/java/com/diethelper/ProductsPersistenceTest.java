@@ -1,6 +1,9 @@
 package com.diethelper;
 
+import com.diethelper.dto.NutritionStatsDTO;
+import com.diethelper.model.Diets;
 import com.diethelper.model.Products;
+import com.diethelper.repository.DietRepository;
 import com.diethelper.repository.ProductsRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,26 +31,8 @@ import static org.junit.Assert.assertEquals;
 public class ProductsPersistenceTest {
     @Autowired
     private ProductsRepository productsRepository;
-
-    @Test
-    @Transactional
-    public void testGet() throws Exception {
-        List<Products> prods = productsRepository.getProductsByMoreProtein(BigDecimal.valueOf(3L));
-        assertEquals(6, prods.size());
-    }
-
-    @Test
-    @Transactional
-    public void testIdProducts() throws Exception {
-        List<Products> prods = productsRepository.getIdProducts();
-    }
-
-    @Test
-    @Transactional
-    public void testGetMealxProd() throws Exception {
-        List<Products> prods = productsRepository.getMealxProd();
-        assertEquals(7, prods.size());
-    }
+    @Autowired
+    private DietRepository dietRepository;
 
     @Test
     @Transactional
@@ -60,4 +45,39 @@ public class ProductsPersistenceTest {
         }
         assertEquals(13, prods.size());
     }
+
+    @Test
+    @Transactional
+    public void findDietsWithDinnersHavingMoreFatThan100(){
+        List<Integer> diets = dietRepository.findDietsWithDinnersHavingMoreFatThan100();;
+        for (Iterator<Integer> i = diets.iterator(); i.hasNext(); ) {
+            Integer item = i.next();
+            System.out.println("Diet id: " + item);
+        }
+    }
+
+    @Test
+    @Transactional
+    public void find3ProductsMostPopular(){
+        List<Products> prods = productsRepository.find3ProductsMostPopular();
+        for (Iterator<Products> i = prods.iterator(); i.hasNext(); ) {
+            Products item = i.next();
+            System.out.println(item.toString());
+        }
+    }
+
+    // TODO: not working yet
+    @Test
+    @Transactional
+    public void findAvgMidSumOfNutritientsForAllDiets(){
+        List<NutritionStatsDTO> list = productsRepository.findAvgMidSumOfNutritientsForAllDiets();
+        list.forEach(System.out::println);
+//        for (Iterator<NutritionStatsDTO> i = list.iterator(); i.hasNext();) {
+//            NutritionStatsDTO item = i.next();
+//            System.out.println("diet: " + item.getIdDiet() + " averages: Protein: " + item.getAvgProtein() +
+//                    "g  Carbo: " + item.getAvgCarbohydrate() + "g Fat "+ item.getAvgFat());
+//        }
+    }
+
+
 }

@@ -5,9 +5,9 @@ package com.diethelper.model;
  */
 public class CaloricNeedsForm {
 
-    int height;
-    int weight;
-    int age;
+    private int height;
+    private int weight;
+    private int age;
 
     public int getHeight() {
         return height;

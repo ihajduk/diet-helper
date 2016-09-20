@@ -1,7 +1,11 @@
 package com.diethelper.service;
 
 import com.diethelper.model.CaloricNeedsForm;
+import com.diethelper.model.Diets;
+import com.diethelper.model.Meals;
 import com.diethelper.model.Products;
+import com.diethelper.repository.DietRepository;
+import com.diethelper.repository.MealsRepository;
 import com.diethelper.repository.ProductsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,10 +39,18 @@ import java.util.List;
  */
 
 @Service
-public class ProductsServiceImpl implements ProductsService {
+public class FoodServiceImpl implements FoodService {
+
+    private ProductsRepository productsRepository;
+    private MealsRepository mealsRepository;
+    private DietRepository dietRepository;
 
     @Autowired
-    private ProductsRepository productsRepository;
+    public FoodServiceImpl(ProductsRepository productsRepository, MealsRepository mealsRepository, DietRepository dietRepository) {
+        this.productsRepository = productsRepository;
+        this.mealsRepository = mealsRepository;
+        this.dietRepository = dietRepository;
+    }
 
     @Override
     public BigDecimal countCaloricNeeds(CaloricNeedsForm caloricNeedsForm) {
@@ -70,5 +82,20 @@ public class ProductsServiceImpl implements ProductsService {
     @Override
     public List<Products> getIdProducts() {
         return productsRepository.getIdProducts();
+    }
+
+    @Override
+    public void saveProduct(Products product) {
+        productsRepository.save(product);
+    }
+
+    @Override
+    public void saveMeal(Meals meal) {
+        mealsRepository.save(meal);
+    }
+
+    @Override
+    public void saveDiet(Diets diet) {
+        dietRepository.save(diet);
     }
 }

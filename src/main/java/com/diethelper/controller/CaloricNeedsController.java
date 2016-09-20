@@ -1,7 +1,8 @@
 package com.diethelper.controller;
 
+import com.diethelper.configuration.PopulateDatabaseClass;
 import com.diethelper.model.CaloricNeedsForm;
-import com.diethelper.service.ProductsService;
+import com.diethelper.service.FoodService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.math.BigDecimal;
 
 /**
@@ -17,11 +19,11 @@ import java.math.BigDecimal;
 @Controller
 public class CaloricNeedsController {
 
-    private ProductsService productsService;
+    private FoodService foodService;
 
     @Autowired
-    CaloricNeedsController(ProductsService productsService) {
-        this.productsService = productsService;
+    CaloricNeedsController(FoodService foodService) {
+        this.foodService = foodService;
     }
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
@@ -32,8 +34,14 @@ public class CaloricNeedsController {
     @RequestMapping(value = "/", method = RequestMethod.POST)
     public String postCaloricPage(@ModelAttribute("caloricNeedsForm") CaloricNeedsForm caloricNeedsForm,
                                   HttpServletRequest request) {
-        BigDecimal calories = productsService.countCaloricNeeds(caloricNeedsForm);
+        BigDecimal calories = foodService.countCaloricNeeds(caloricNeedsForm);
         request.getSession().setAttribute("calories", calories);
         return "redirect:/diet";
+    }
+
+    @RequestMapping(value = "/populate", method = RequestMethod.POST)
+    public String populateData() throws IOException {
+        PopulateDatabaseClass.populateDBWithRandomData();
+        return "redirect:/";
     }
 }

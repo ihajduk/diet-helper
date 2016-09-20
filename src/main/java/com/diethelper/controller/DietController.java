@@ -1,7 +1,7 @@
 package com.diethelper.controller;
 
 import com.diethelper.model.Products;
-import com.diethelper.service.ProductsService;
+import com.diethelper.service.FoodService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,16 +17,16 @@ import java.util.List;
 @Controller
 public class DietController {
 
-    private ProductsService productsService;
+    private FoodService foodService;
 
     @Autowired
-    DietController(ProductsService productsService) {
-        this.productsService = productsService;
+    DietController(FoodService foodService) {
+        this.foodService = foodService;
     }
 
     @RequestMapping(value = "/diet", method = RequestMethod.GET)
     public String dietView(HttpServletRequest request) {
-        List<Products> productsList = productsService.getDietxMeal(1);
+        List<Products> productsList = foodService.getDietxMeal(1);
         request.getSession().setAttribute("productsList", productsList);
         BigDecimal calories = (BigDecimal) request.getSession().getAttribute("calories");
 
