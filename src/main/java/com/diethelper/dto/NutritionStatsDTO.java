@@ -1,8 +1,5 @@
 package com.diethelper.dto;
 
-import javax.persistence.ColumnResult;
-import javax.persistence.ConstructorResult;
-import javax.persistence.SqlResultSetMapping;
 import java.math.BigDecimal;
 
 /**
@@ -14,6 +11,9 @@ public class NutritionStatsDTO {
     private Double avgProtein;
     private Double avgCarbohydrate;
     private Double avgFat;
+    private BigDecimal sumProtein;
+    private BigDecimal sumCarbohydrate;
+    private BigDecimal sumFat;
 
     public void setIdDiet(int idDiet) {
         this.idDiet = idDiet;
@@ -29,6 +29,18 @@ public class NutritionStatsDTO {
 
     public void setAvgFat(Double avgFat) {
         this.avgFat = avgFat;
+    }
+
+    public void setSumProtein(BigDecimal sumProtein) {
+        this.sumProtein = sumProtein;
+    }
+
+    public void setSumCarbohydrate(BigDecimal sumCarbohydrate) {
+        this.sumCarbohydrate = sumCarbohydrate;
+    }
+
+    public void setSumFat(BigDecimal sumFat) {
+        this.sumFat = sumFat;
     }
 
     public int getIdDiet() {
@@ -47,9 +59,23 @@ public class NutritionStatsDTO {
         return avgFat;
     }
 
+    public BigDecimal getSumProtein() {
+        return sumProtein;
+    }
+
+    public BigDecimal getSumCarbohydrate() {
+        return sumCarbohydrate;
+    }
+
+    public BigDecimal getSumFat() {
+        return sumFat;
+    }
+
     @Override
     public String toString() {
-        return "diet ID: " + idDiet + ", averages: Protein: " + getAvgProtein().intValue() +
-                    "g  Carbohydrate: " + getAvgCarbohydrate().intValue() + "g Fat: "+ getAvgFat().intValue() +"g";
+        return "diet ID: " + idDiet + ", averages: Protein: " + avgProtein +
+                    "g  Carbohydrate: " + avgCarbohydrate + "g Fat: "+ avgFat +
+                    "g, Sums: Protein " + sumProtein + "g Carbohydrate: " +
+                sumCarbohydrate + "g Fat: "+ sumFat +"g";
     }
 }

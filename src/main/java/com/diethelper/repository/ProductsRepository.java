@@ -67,10 +67,11 @@ public class ProductsRepository {
     }
 
 
-        // TODO: sum, median?
+    // TODO: median?
     public List<NutritionStatsDTO> findAvgMidSumOfNutritientsForAllDiets() {
         return (List<NutritionStatsDTO>) entityManager.unwrap(Session.class)
-                .createQuery("SELECT d.idDiet as idDiet, AVG(p.protein) as avgProtein, AVG(p.carbohydrate) as avgCarbohydrate, AVG(p.fat) as avgFat " +
+                .createQuery("SELECT d.idDiet as idDiet, ROUND(AVG(p.protein)) as avgProtein, ROUND(AVG(p.carbohydrate)) as avgCarbohydrate, ROUND(AVG(p.fat)) as avgFat, " +
+                        "SUM(p.protein) as sumProtein, SUM(p.carbohydrate) as sumCarbohydrate, SUM(p.fat) as sumFat " +
                         "FROM Products p, Meals m, Diets d " +
                         "JOIN d.meals dxm JOIN m.products mxp " +
                         "WHERE dxm.idMeal=m.idMeal AND mxp.idProduct=p.idProduct " +
